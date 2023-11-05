@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Bem vindo {{ $name }}!</h1>
+
+    @if ($name == 'Michael')
+        <p>Olá admin, bem vindo de volta!</p>
+    @else
+        <p>Olá guest, bem vindo de volta!</p>
+    @endif
 </body>
 </html>
