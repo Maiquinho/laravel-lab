@@ -9,10 +9,23 @@
 <body>
     <h1>Bem vindo {{ $name }}!</h1>
 
+
+    {{-- if statement --}}
+
     @if ($name == 'Michael')
         <p>Olá admin, bem vindo de volta!</p>
     @else
         <p>Olá guest, bem vindo de volta!</p>
     @endif
+
+    {{-- loops --}}
+
+    <ul>
+    @foreach ($listForLooping as $item)
+        <li>{{ $item }}</li>
+    @endforeach
+    </ul>
+
+
 </body>
 </html>

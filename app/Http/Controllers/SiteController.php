@@ -12,6 +12,13 @@ class SiteController extends Controller
 
         $data = [
             'name' => $name,
+            'listForLooping' => [
+                'php',
+                'laravel',
+                'orm',
+                'blade',
+                'sql'
+            ] 
         ];
 
         return view('welcome', $data);
